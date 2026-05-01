@@ -1,1 +1,96 @@
+program-1 if statement?
+#include<iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin >> age;
+
+    if(age >= 18) {
+        cout << "Eligible for vote";
+    } else {
+        cout << "Not eligible for vote";
+    }
+
+    return 0;
+}
+
+
+
+Program-2 if statement?
+#include<iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin >> age;
+
+    if(age >= 18) {
+        cout << "Eligible for vote";
+    } else {
+        cout << "Not eligible for vote";
+    }
+
+    return 0;
+}
+
+
+
+Program-3 nested if-else statement?
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+    cin >> age;
+
+    if(age > 18)
+    {
+        if(age >= 50)
+        {
+            cout << "Senior citizen eligible for vote";
+        }
+        else
+        {
+            cout << "Eligible for vote";
+        }
+    }
+    else
+    {
+        if(age < 0)
+        {
+            cout << "Enter a valid age number";
+        }
+        else
+        {
+            cout << "Not eligible for vote";
+        }
+    }
+
+    return 0;
+}
+
+
+
+Program-4 ternary operator?
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a, b;
+
+    cout << "Enter 1st number: ";
+    cin >> a;
+
+    cout << "Enter 2nd number: ";
+    cin >> b;
+
+    int max_number = (a > b) ? a : b;
+
+    cout << "Maximum number is: " << max_number << endl;
+
+    return 0;
+}
 
