@@ -1,1 +1,60 @@
+Program-1 Convert celcius to fahrenheit?
+#include<iostream>
+using namespace std;
+int main(){
+double celcius;
+double fahrenheit;
+cin>>celcius;
+fahrenheit=(celcius*9.0/5.0)+32;;
+cout << fahrenheit << endl;
+return 0;
+}
 
+Program-2 Local and global variable?
+#include<iostream>
+using namespace std;
+int main(){
+int localvariable;
+int globalvariable;
+result= localvariable / globalvariable;
+cout<< result << endl;
+return 0;
+}
+
+Program-3 Check wheather a given side of traingle are equilaterial or not?
+#include<iostream>
+using namespace std;
+int main(){
+int side1,side2,side3;
+cin>> side1 >> side2 >> side3;
+bool isEqu = (side1 > 0) && (side1 == side2) && (side2 == side3);
+cout<< isEqu<<endl;
+return 0;
+}
+
+Program-4 Swapping of values? a=10; -5/a=5; -10
+#include<iostream>
+using namespace std;
+int main(){
+int a,b;
+cin >> a >> b;
+int temp = a;
+a = b;
+b = temp;
+cout << a << "\n" << b << endl;
+return 0;
+}
+
+Program-5 Login credentials?
+#include<iostream>
+using namespace std;
+int main(){
+int userId=1234;
+int userPassword=0000;
+int inputId;
+int inputPassword;
+cin >> inputId >> inputPassword;
+cout<< "Access Granted" << is granted << endl;
+cout<< "Access denined" << is granted << endl;
+return 0;
+}
