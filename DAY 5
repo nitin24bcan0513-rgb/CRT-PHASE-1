@@ -1,0 +1,89 @@
+PROGRAM-1 FUNCTION MAKING PRATICE?
+#include<iostream>
+using namespace std;
+
+void printmessage()
+{
+    cout<<"Hi we are learning function"?
+}
+
+int main()
+{
+    printmessage();
+    return 0;
+}
+
+
+
+PROGRAM-2 MAKE A AREACALCULATE FUNCTION?
+#include<iostream>
+using namespace std;
+
+int calculatearea(int length,int width)
+{
+return length*width;
+}
+int main()
+{
+int a=10;
+int b=5;
+int area=calculatearea(a,b);
+cout<<area;
+}
+
+
+
+
+PROGRAM-3 NO ARGUMENT NO RETURN?
+#include<iostream>
+using namespace std;
+void bellring()
+{
+    cout<<"Ting tong...";
+}
+int main()
+{
+    bellring();
+}
+
+
+
+PROGRAM-4 WITH ARGUMENT NO RETURN?
+#include<iostream>
+using namespace std;
+void sendmessage(string message)
+{
+    cout<<message;
+}
+int main()
+{
+    sendmessage("BJP wons...");
+}
+
+
+PROGRAM-5 NO ARGUMENT WITH RETURN?
+#include<iostream>
+using namespace std;
+int ticketnumber()
+{
+    return 101;
+}
+int main()
+{
+    cout<<ticketnumber();
+}
+
+
+
+PROGRAM-6 CURRENCYCONVERTOR ?
+#include<iostream>
+using namespace std;
+
+float currencyconvertor(float rupees)
+{
+    return rupees /95.25;
+}
+int main()
+{
+    cout<<currencyconvertor(200);
+}
