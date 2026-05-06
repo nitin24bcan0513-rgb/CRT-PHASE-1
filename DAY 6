@@ -1,0 +1,111 @@
+PROGRAM-1 PRICE OF COFFEE?
+#include<iostream>
+using namespace std;
+int totalamount(int coffee)
+{
+    return coffee*30;
+}
+int main()
+{
+    cout<<totalamount(5);
+}
+
+
+PROGRAM-2 PRINT STORE DISCOUNT PROGRAM?
+#include<iostream>
+using namespace std;
+int totalamount(int amount)
+{
+    return amount-(amount*100/1000);
+}
+int main()
+{
+    cout<<totalamount(1000);
+}
+
+
+
+
+
+PROGRAM-3 POINTERS?
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a=10;
+    int *ptr1=&a;
+    
+    int b=20;
+    int *ptr2=&b;
+
+    int c = *ptr1+*ptr2;
+    cout<<c;
+}
+
+
+
+
+PROGRAM-4 SWAPPING OF 2 VARIABLE'S VALUE USING POINTERS AND USING FUNCTION?
+#include<iostream>
+using namespace std;
+void swapnumber(int *ptr1,int *ptr2)
+{
+    int temp=*ptr1;
+    *ptr1=*ptr2;
+    *ptr2=temp;
+}
+int main()
+{
+    int a,b;
+    cin>>a;
+    cin>>b;
+    swapnumber(&a,&b);
+    cout<<a<<" "<<b;
+    return 0;
+}
+
+
+
+
+PROGRAM-5 CLASS AND OBJECT?
+#include<iostream>
+using namespace std;
+class student
+{
+    public:
+    string name;
+    int age;
+
+    void introduce()
+    {
+        cout<<"Hi there, this person name is "<< name <<" and his age is" << age <<"\n";
+    }
+};
+int main()
+{
+    student s1;
+    s1.name=" nitin";
+    s1.age=20;
+    s1.introduce();
+    return 0;
+}
+
+
+
+PROGRAM-6 ACCESS SPECIFIER?
+#include<iostream>
+using namespace std;
+
+class publicpark
+{
+    public:
+    void enter()
+    {
+        cout<<"anyone can enter in the park...";
+    }
+};
+int main()
+{
+    publicpark p;
+    p.enter();
+}
