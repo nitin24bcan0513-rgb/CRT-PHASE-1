@@ -1,0 +1,97 @@
+PROGRAM 1 CALL BY VALUE AND CALL BY REFERENCE?
+#include<iostream>
+using namespace std;
+
+void updatebyvalue(int a)
+{
+    a=500;
+}
+void updatebyreference(int &a)
+{
+    a=500;
+}
+int main()
+{
+    int original=100;
+    updatebyvalue(original);
+    cout<<original<<"\n";
+    updatebyreference(original);
+    cout<<original;
+    return 0;
+}
+
+
+
+PROGRAM 2 ACCESS SPECIFIER,PRIVATE?
+#include<iostream>
+using namespace std;
+
+class bankaccount
+{
+    int balance=5000;
+
+    public:
+    void showbalance()
+    {
+        cout<<balance;
+    }
+};
+int main()
+{
+    bankaccount obj1;
+    obj1.showbalance();
+}
+
+
+
+PROGRAM 3 PROTECTED ACCESS SPECIFIER?
+#include<iostream>
+using namespace std;
+
+class parent
+{
+    protected:
+    int secretcode=1234;
+};
+class child : public parent
+{
+    public:
+    void accesslocker()
+    {
+        cout<<secretcode;
+    }
+};
+int main()
+{
+    child obj1;
+    obj1.accesslocker();
+}
+
+
+
+PROGRAM 4 PARAMETERIZED CONSTRUCTER?
+#include<iostream>
+using namespace std;
+
+class student
+{
+    public:
+    string name;
+    int age;
+    student(string  studentname,int studentage)
+    {
+        name=studentname;
+        age=studentage;
+    }
+    void introduce()
+    {
+        cout<<" Hi there,this person name is "<<name<<" and his age is "<<age<<"\n";
+    }
+};
+int main()
+{
+    student s1("vikash meena",20);
+    s1.introduce();
+}
+
+
