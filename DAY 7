@@ -95,3 +95,71 @@ int main()
 }
 
 
+
+PROGRAM 5 WIFI PASSWORD?
+#include<iostream>
+using namespace std;
+
+class wificonnection
+{
+    public:
+    string networkname;
+    int password;
+
+    wificonnection()
+    {
+        networkname="ACT fiber net";
+        password=1234;
+    }
+    void showdetails()
+    {
+        cout<<networkname<<" "<<password;
+    }
+};
+int main()
+{
+    wificonnection obj1;
+    obj1.showdetails();
+}
+
+
+
+
+PROGRAM 6 AREA OF RECTANGLE? 
+#include<iostream>
+using namespace std;
+
+class rectangle
+{
+    public:
+    int length;
+    int width;
+    rectangle()
+    {
+        length=10;
+        width=10;
+    }
+    rectangle(int l)
+    {
+        length=1;
+        width=20;
+    }
+    rectangle(int l,int b)
+    {
+        length=l;
+        width=b;
+    }
+    void area()
+    {
+        cout<<length*width;
+    }
+};
+int main()
+{
+    rectangle r1;
+    r1.area();
+    rectangle r2(5);
+    r2.area();
+    rectangle r3(5,2);
+    r3.area();
+}
