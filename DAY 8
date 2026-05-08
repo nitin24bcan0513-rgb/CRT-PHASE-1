@@ -114,3 +114,70 @@ int main()
 
     return 0;
 }
+
+
+
+PROGRAM 4 HYBRID INHERITANCE , DIAMOND PROBLEM SOLUTION, VIRTUAL BASE CLASS?
+#include<iostream>
+using namespace std;
+
+class A
+{
+    public:
+    void print()
+    {
+        cout<<"Hi there";
+    }
+};
+class B : virtual public A{
+};
+class C : virtual public A{
+};
+class D : virtual public B,public C{
+};
+int main()
+{
+    D obj1;
+    obj1.print();
+}
+
+
+
+
+PROGRAM 5 ENCAPSULATION?
+#include<iostream>
+using namespace std;
+
+class bankaccount
+{
+    private:
+    int bankbalance;
+
+    public:
+    void setbalance(int amount)
+    {
+        if(amount>=0)
+        {
+            bankbalance=amount;
+        }
+        else
+        {
+            cout<<"Enter a valid number";
+        }
+    }
+    
+    int getbalance()
+    {
+        return bankbalance;
+    }
+};
+int main()
+{
+    bankaccount obj1;
+    obj1.setbalance(8000);
+    cout<<obj1.getbalance();
+    return 0;
+}
+
+
+
