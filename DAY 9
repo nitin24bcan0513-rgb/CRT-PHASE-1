@@ -1,0 +1,47 @@
+PROGRAM 1 FUNCTION OVERRIDING ,SAME FUCNTION NAME--SAME PARAMETERS--DIFFERENT CLASSES?
+#include<iostream>
+using namespace std;
+
+class appliance
+{
+    public:
+    virtual void turnon()
+    {
+        cout<<"appliance is getting turn on.."<<"\n";
+    }
+    virtual void work()=0;
+};
+class fan : public appliance
+{
+    public:
+    void turnon() override
+    {
+        cout<<"fan blodes are moving slowly.."<<"\n";
+    }
+    public:
+    void work() override
+    {
+        cout<<"once fan starts at full speed it gives cool air.."<<"\n";
+    }
+};
+class tooster :public appliance
+{
+    public:
+    void work() override
+    {
+        cout<<"tooster is heating up the breads.."<<"\n";
+    }
+};
+int main()
+{
+    appliance*kitchenapp;
+    fan myfan;
+    kitchenapp = &myfan;
+    kitchenapp->turnon();
+    kitchenapp->work();
+
+    tooster mytools;
+    kitchenapp=&mytools;
+    kitchenapp->turnon();
+    kitchenapp->work();
+}
