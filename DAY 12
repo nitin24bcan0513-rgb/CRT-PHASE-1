@@ -1,0 +1,37 @@
+PROGRAM 1 RECURSION?
+#include<iostream>
+using namespace std;
+
+void printnumber(int n)
+{
+    if(n>5)
+    {
+        return;
+    }
+    cout<<n<<" ";
+    printnumber(n+1);
+}
+int main()
+{
+    printnumber(1);
+}
+
+
+
+PROGRAM 2 FACTORIAL?
+#include <iostream>
+using namespace std;
+
+int factorial(int n) {
+    // Base case
+    if (n == 0 || n == 1)
+        return 1;
+
+    // Recursive call
+    return n * factorial(n - 1);
+}
+
+int main() {
+    cout<<factorial(5);
+}
+ 
